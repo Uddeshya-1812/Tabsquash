@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" defer>
+    <script src='popup.js' defer></script>
     <title>Tabsquash Popup</title>
 </head>
 <body>
@@ -21,13 +21,18 @@
 </body>
 
 <style>
-
-    /* .btn, .btn:hover, .btn:focus, .btn:active, .btn-primary.active .open>.dropdown-toggle, .btn */
-    .btn-primary, .btn:focus .btn:hover, .btn:active, .btn:visited{
+    .btn-primary, .btn:hover, .btn:active, .btn:visited{
         background-color: rgb(194, 36, 68) !important; 
         border-color: rgb(194, 36, 68) !important;
-        border:0cm;
+
+
     
+    }
+    .btn:focus{
+        outline: 1px solid rgb(194, 36, 68) !important;
+        outline-offset: 1px;
+        outline-color: rgb(194, 36, 68);
+     
     }
     body{
         overflow:scroll;
@@ -40,5 +45,4 @@
     
     
     </style>
-<script src='popup.js' defer></script>
 </html>

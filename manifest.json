@@ -1,7 +1,7 @@
 {
     "name": "Tabsquash",
     "description": "Merges tabs with same web adderesses",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "manifest_version": 3,
     "background":{
         "service_worker" : "background.js"
